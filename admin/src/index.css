@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+
+@theme inline {
+  --color-background: oklch(18% 0.03 270);
+  --color-foreground: oklch(96% 0.01 264);
+  --color-card: oklch(22% 0.035 270);
+  --color-card-foreground: oklch(96% 0.01 264);
+  --color-primary: oklch(62% 0.24 285);
+  --color-primary-foreground: oklch(99% 0.01 285);
+  --color-muted: oklch(28% 0.03 270);
+  --color-muted-foreground: oklch(72% 0.03 264);
+  --color-border: oklch(32% 0.03 270);
+  --color-danger: oklch(58% 0.22 25);
+  --color-input: oklch(26% 0.03 270);
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground antialiased;
+    margin: 0;
+    min-height: 100vh;
+  }
+}
