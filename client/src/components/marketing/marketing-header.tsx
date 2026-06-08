@@ -4,8 +4,6 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { CogioLogo } from '@/components/brand/cogio-logo';
 import { Button } from '@/components/ui/button';
-import { cn } from '@/lib/utils';
-
 const navLinks = [
   { href: '#features', label: 'Features' },
   { href: '#how-it-works', label: 'How it works' },
@@ -41,10 +39,7 @@ export function MarketingHeader() {
           <Button variant="ghost" asChild className="text-ink-muted hover:bg-white/10 hover:text-white">
             <Link to="/login">Log in</Link>
           </Button>
-          <Button
-            asChild
-            className="bg-gradient-to-r from-[oklch(58%_0.26_285)] to-[oklch(65%_0.18_200)] text-white shadow-lg shadow-[oklch(58%_0.28_285/0.35)] hover:opacity-95"
-          >
+          <Button asChild>
             <Link to="/signup">Get started</Link>
           </Button>
         </div>
@@ -83,15 +78,11 @@ export function MarketingHeader() {
           >
             Log in
           </Link>
-          <Link
-            to="/signup"
-            onClick={() => setMobileOpen(false)}
-            className={cn(
-              'mt-1 rounded-lg bg-gradient-to-r from-[oklch(58%_0.26_285)] to-[oklch(65%_0.18_200)] px-3 py-2.5 text-center text-sm font-semibold text-white',
-            )}
-          >
-            Get started
-          </Link>
+          <Button asChild className="mt-1 w-full">
+            <Link to="/signup" onClick={() => setMobileOpen(false)}>
+              Get started
+            </Link>
+          </Button>
         </nav>
       </motion.div>
     </motion.header>

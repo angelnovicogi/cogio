@@ -87,7 +87,7 @@ export function LoginPage() {
         <Button
           type="submit"
           disabled={isSubmitting}
-          className="h-11 w-full gap-2 rounded-xl bg-gradient-to-r from-[oklch(58%_0.26_285)] to-[oklch(65%_0.18_200)] text-white hover:opacity-95"
+          className="h-11 w-full gap-2 rounded-xl"
         >
           Sign in
           <ArrowRight className="h-4 w-4" />

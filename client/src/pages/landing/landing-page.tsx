@@ -123,7 +123,7 @@ export function LandingPage() {
               <Button
                 asChild
                 size="lg"
-                className="h-12 gap-2 rounded-xl bg-gradient-to-r from-[oklch(58%_0.26_285)] to-[oklch(65%_0.18_200)] px-8 text-base font-semibold text-white shadow-xl shadow-[oklch(58%_0.28_285/0.4)] hover:opacity-95"
+                className="h-12 gap-2 rounded-xl px-8 text-base font-semibold"
               >
                 <Link to="/signup">
                   Get started

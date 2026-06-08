@@ -81,7 +81,7 @@ export function DashboardPage() {
               Timesheets
             </Link>
           </Button>
-          <Button className="h-10 gap-2 rounded-xl bg-gradient-to-r from-[oklch(58%_0.26_285)] to-[oklch(65%_0.18_200)] text-white shadow-md shadow-[oklch(58%_0.28_285/0.25)] hover:opacity-95">
+          <Button className="h-10 gap-2 rounded-xl">
             <Play className="h-4 w-4 fill-current" />
             Start timer
           </Button>
